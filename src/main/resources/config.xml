@@ -6,5 +6,6 @@
 
     <bean id="Ram" class="org.abeer.Ram"></bean>
     <bean id="Shyam" class="org.abeer.Shyam"></bean>
+    <bean id="Address" class="org.abeer.Address"></bean>
 
 </beans>
