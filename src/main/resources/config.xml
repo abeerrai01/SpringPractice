@@ -4,8 +4,21 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="Ram" class="org.abeer.Ram"></bean>
-    <bean id="Shyam" class="org.abeer.Shyam"></bean>
-    <bean id="Address" class="org.abeer.Address"></bean>
+    <bean id="Ram" class="org.abeer.Ram" autowire="byType">
+        <property name="id" value="101"></property>
+        <property name="name" value="Ram"></property>
+        <property name="Salary" value="10000"></property>
+    </bean>
+    <bean id="Shyam" class="org.abeer.Shyam" autowire="byType">
+        <property name="id" value="102"></property>
+        <property name="name" value="Shyam"></property>
+        <property name="Salary" value="20000"></property>
+    </bean>
+    <bean id="Address" class="org.abeer.Address">
+        <property name="id" value="103"></property>
+        <property name="address" value="E-374"></property>
+        <property name="city" value="Moradabad"></property>
+        <property name="state" value="UttarPreadesh"></property>
+    </bean>
 
 </beans>
